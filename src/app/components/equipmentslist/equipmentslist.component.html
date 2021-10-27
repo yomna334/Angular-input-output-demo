@@ -1,0 +1,9 @@
+<div class="parent">
+    <h2>Parent Component</h2>
+    <app-equipment-detail [item]="currnetItem" (newItemValue)="addclothespiece($event)"></app-equipment-detail>
+    <ul>
+        <li *ngFor="let item of items">
+           {{item}}
+        </li>
+    </ul>
+</div>

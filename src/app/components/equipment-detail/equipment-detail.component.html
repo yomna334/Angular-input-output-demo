@@ -1,0 +1,8 @@
+<div class="child">
+    <h2>child component</h2>
+<p>new value <strong>{{item}}</strong></p>
+
+<label for="new-Item">Add new Item:</label>
+<input type ="text" id="new-Item" #nitem>
+<button (click)="addNewItem(nitem.value);nitem.value=''">Add</button>
+</div>
